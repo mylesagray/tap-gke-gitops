@@ -26,7 +26,7 @@ spec:
         carto.run/workload-name: dotnet-aspcore
     spec:
       containers:
-      - image: eu.gcr.io/tap-shared-instance/workloads/dotnet-aspcore-dev@sha256:bf57e5dd3faacb714ebcc6043bfb1c0c3137c5a96c42a450c6c5679a32c80a90
+      - image: eu.gcr.io/tap-shared-instance/workloads/dotnet-aspcore-dev@sha256:0c841f96eed23525a5e889c55f99be1ea393e058c1e85c84884dfb73dc37adbd
         name: workload
         resources: {}
         securityContext:
