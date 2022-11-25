@@ -61,7 +61,7 @@ spec:
       - env:
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080" -Dserver.shutdown.grace-period="24s"
-        image: eu.gcr.io/tap-shared-instance/workloads/shipping-service-dev@sha256:e49c8e74a411bf8288e9eed070f1447dd15d40bc2dd325e058d8803e1b263f97
+        image: eu.gcr.io/tap-shared-instance/workloads/shipping-service-dev@sha256:7ae328e63e26424f11dae3fb62a8a731d5cbe31a1c059e2808dbcc3d61e3c95b
         livenessProbe:
           httpGet:
             path: /livez
