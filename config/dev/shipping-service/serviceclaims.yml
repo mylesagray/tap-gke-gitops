@@ -13,8 +13,8 @@ metadata:
 spec:
   name: rmq
   service:
-    apiVersion: rabbitmq.com/v1beta1
-    kind: RabbitmqCluster
+    apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+    kind: ResourceClaim
     name: rmq-1
   workload:
     apiVersion: apps/v1
