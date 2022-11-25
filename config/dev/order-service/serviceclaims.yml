@@ -14,8 +14,8 @@ metadata:
 spec:
   name: rmq
   service:
-    apiVersion: rabbitmq.com/v1beta1
-    kind: RabbitmqCluster
+    apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+    kind: ResourceClaim
     name: rmq-1
   workload:
     apiVersion: serving.knative.dev/v1
@@ -38,8 +38,8 @@ metadata:
 spec:
   name: db
   service:
-    apiVersion: sql.tanzu.vmware.com/v1
-    kind: Postgres
+    apiVersion: services.apps.tanzu.vmware.com/v1alpha1
+    kind: ResourceClaim
     name: postgres-1
   workload:
     apiVersion: serving.knative.dev/v1
