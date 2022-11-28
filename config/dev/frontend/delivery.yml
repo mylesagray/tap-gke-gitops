@@ -28,7 +28,7 @@ spec:
         networking.knative.dev/visibility: cluster-local
     spec:
       containers:
-      - image: eu.gcr.io/tap-shared-instance/workloads/frontend-dev@sha256:b2ade79e0cd61f590d562dc4e9a3513b45eda4023dfef15744d4ddcd31d87778
+      - image: eu.gcr.io/tap-shared-instance/workloads/frontend-dev@sha256:5395f0d0fe13fc41f416686dd3268a96cc761b7946fc5513190d547ab9ef505d
         name: workload
         resources: {}
         securityContext:
