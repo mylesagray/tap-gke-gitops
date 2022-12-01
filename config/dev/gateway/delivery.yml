@@ -40,6 +40,7 @@ spec:
         apps.tanzu.vmware.com/workload-type: web
         carto.run/workload-name: gateway
         conventions.apps.tanzu.vmware.com/framework: spring-boot
+        dummy: "true"
         tanzu.app.live.view: "true"
         tanzu.app.live.view.application.actuator.port: "8081"
         tanzu.app.live.view.application.flavours: spring-boot_spring-cloud-gateway
