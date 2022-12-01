@@ -10,7 +10,6 @@ metadata:
     app.kubernetes.io/part-of: gateway
     apps.tanzu.vmware.com/has-tests: "true"
     apps.tanzu.vmware.com/workload-type: web
-    dummy: "true"
     app.kubernetes.io/component: run
     carto.run/workload-name: gateway
 spec:
@@ -40,7 +39,6 @@ spec:
         apps.tanzu.vmware.com/workload-type: web
         carto.run/workload-name: gateway
         conventions.apps.tanzu.vmware.com/framework: spring-boot
-        dummy: "true"
         tanzu.app.live.view: "true"
         tanzu.app.live.view.application.actuator.port: "8081"
         tanzu.app.live.view.application.flavours: spring-boot_spring-cloud-gateway
@@ -48,8 +46,6 @@ spec:
     spec:
       containers:
       - env:
-        - name: DEBUG
-          value: "true"
         - name: JAVA_TOOL_OPTIONS
           value: -Dmanagement.endpoint.health.probes.add-additional-paths="true" -Dmanagement.endpoint.health.show-details=always -Dmanagement.endpoints.web.base-path="/actuator" -Dmanagement.endpoints.web.exposure.include=* -Dmanagement.health.probes.enabled="true" -Dmanagement.server.port="8081" -Dserver.port="8080"
         image: eu.gcr.io/tap-shared-instance/workloads/gateway-dev@sha256:19a4681f168310013e913ecc8fbd91c14ff6c85b769e2b2d22b94b38b5a9bbb7
