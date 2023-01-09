@@ -26,7 +26,7 @@ spec:
         carto.run/workload-name: node-express
     spec:
       containers:
-      - image: eu.gcr.io/tap-shared-instance/workloads/node-express-dev@sha256:a15fa10343925d69aaf964b0d5fb96da76249318222e28780c759f0ee841c3d8
+      - image: eu.gcr.io/tap-shared-instance/workloads/node-express-dev@sha256:fc2b1498e8b2028a593a1e52a3e70b05a0276bc0abac21f9654e8d698f2bdf19
         name: workload
         resources: {}
         securityContext:
